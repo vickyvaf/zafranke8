@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zafran yang ke-8</title>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Lato&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            VANTA.BIRDS({
+            el: "#main",
+            backgroundAlpha: 0,
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: true,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            })
+        })
+    </script>
+    
+    <style>
+        *, body, html {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Lato';
+            /* background-color: cadetblue; */
+            background: url(https://images.pexels.com/photos/212942/pexels-photo-212942.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+            /* background-size: cover; */
+        }
+
+        .container {
+            margin-top: -35px;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+
+        .container > img {
+            margin-bottom: 20px;
+            width: 200px;
+            border-radius: 100%;
+            border: solid #eaeaea 2px;
+        }
+
+        .container > h6 {
+            font-size: 18px;
+            color: white;
+            font-weight: 700;
+        }
+
+        button {
+            margin: 40px;
+            font-size: 25px;
+            font-weight: 600;
+            color: brown;
+            background-color: #fffa;
+            border: none;
+            padding: 10px 40px;
+            border: solid aliceblue 1px;
+            border-radius: 30px;
+            backdrop-filter: blur(1px) saturation(300%);
+        }
+
+        marquee {
+            color: white;
+            font-size: 15px;
+            font-weight: normal;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <marquee behavior="" direction="">Selamat ulang tahun zafran yang ke-8 yaaaaaa 🤭</marquee>
+    <div class="container" id="main">
+        <img src="https://www.simpleimageresizer.com/_uploads/photos/49029cde/IMG_20220707_160416_copy_300x300_99.jpg" alt="profile">
+        <h6>Halo Zafran 😀<h6/>
+        <br/>
+        <p>Ini hadiah ulang tahun dari Kakak Vicky</p>
+        <p>Klik tombol ini yaaa😙</p>
+        <!-- <p>⬇</p> -->
+        <button onclick="lanjut()" type="button">HBD MAS ZA 🥳</button>
+    </div>
+
+    <script>
+        async function lanjut() {
+            await Swal.fire({
+                title: "Halo Mas Za 🤗",
+                imageUrl: "https://i.pinimg.com/originals/ac/32/25/ac3225ba36b5f3a1d5038ac762543ab2.gif",
+                imageWidth: 170, imageHeight: 130,
+            });
+            await Swal.fire({
+                title: "Anaknya Putra Erlangga 🤣",
+                imageUrl: "https://i.pinimg.com/originals/35/09/27/350927fe6e26c3a5701dbe6a6a495b43.gif",
+                imageWidth: 125, imageHeight: 135,
+            });
+            await Swal.fire({
+                title: "Sudah umur 8 tahun aja ya nich🥱",
+                imageUrl: "https://thumbs.gfycat.com/HatefulEasygoingDormouse-max-1mb.gif",
+                imageWidth: 120, imageHeight: 125,
+            });
+            await Swal.fire({
+                title: "Semoga tercapai jadi masinis yaa 😎",
+                imageUrl: "https://s3.getstickerpack.com/storage/uploads/sticker-pack/quby/sticker_17.gif?1c8470a19e64bc3024eb5a05427781d8",
+                imageWidth: 120, imageHeight: 125,
+            });
+            await Swal.fire({
+                title: "Nanti tiket kereta api nya gratis lhoo 😝",
+                imageUrl: "https://i.pinimg.com/originals/f0/dc/0c/f0dc0c5f0e1ffbc04d4ab8b512fefacd.gif",
+                imageWidth: 120, imageHeight: 125,
+            });
+        }
+    </script>
+
+</body>
+</html>
